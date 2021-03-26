@@ -1,14 +1,14 @@
 const app = require('express')()
 const bodyParser = require('body-parser')
 
-const indexRouter = require(__dirname + '/routers/indexRouter')
-const usersRouter = require(__dirname + '/routers/usersRouter')
+const indexController = require(__dirname + '/routers/indexRouter')
+const userController = require(__dirname + '/routers/usersRouter')
 
 // config
 app.use(bodyParser.json())
 
 // routing
-app.use('/', indexRouter)
-app.use('/user', usersRouter)
+app.use('/', indexController)
+app.use('/user', userController)
 
 app.listen(9999)
