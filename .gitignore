@@ -1,0 +1,4 @@
+node_modules/
+http_req/
+curl.txt
+*.http
